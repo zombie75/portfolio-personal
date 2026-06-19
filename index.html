@@ -1,89 +1,69 @@
-<!DOCTYPE html>
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    margin: 0;
+}
 
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Martinez | Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+header {
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
 
-```
-<header>
-    <h1>Carlos Martinez</h1>
-    <p>Desarrollador Full Stack</p>
-</header>
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
 
-<main>
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
 
-    <section>
-        <h2>Sobre mí</h2>
-        <p>
-            Soy Desarrollador Full Stack apasionado por la creación de
-            aplicaciones web modernas, bases de datos y soluciones
-            tecnológicas que aporten valor a los usuarios. Actualmente
-            continúo fortaleciendo mis conocimientos en desarrollo de
-            software y construyendo proyectos para ampliar mi experiencia
-            profesional.
-        </p>
-    </section>
+.card:hover {
+    transform: translateY(-5px);
+}
 
-    <section>
-        <h2>Proyectos</h2>
+.btn,
+.card a {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}
 
-        <div class="card">
-            <h3>Proyecto 1</h3>
-            <p>
-                Aplicación web desarrollada para demostrar habilidades en
-                desarrollo frontend y backend.
-            </p>
-            <a href="#" target="_blank">Ver repositorio</a>
-        </div>
+.btn:hover,
+.card a:hover {
+    background: #1e40af;
+}
 
-        <div class="card">
-            <h3>Proyecto 2</h3>
-            <p>
-                Proyecto enfocado en el manejo de datos, interfaces de usuario
-                y buenas prácticas de programación.
-            </p>
-            <a href="#" target="_blank">Ver repositorio</a>
-        </div>
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
 
-        <div class="card">
-            <h3>Proyecto 3</h3>
-            <p>
-                Desarrollo de una solución web orientada a optimizar procesos
-                y mejorar la experiencia del usuario.
-            </p>
-            <a href="#" target="_blank">Ver repositorio</a>
-        </div>
+.skills li {
+    background: #e5e7eb;
+    padding: 8px 12px;
+    border-radius: 999px;
+}
 
-    </section>
-
-    <section>
-        <h2>Contacto</h2>
-
-        <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/zombie75" target="_blank">
-                github.com/zombie75
-            </a>
-        </p>
-
-        <p>
-            <strong>LinkedIn:</strong>
-            <a href="https://www.linkedin.com/in/carlos-martinez-09728144"
-               target="_blank">
-                linkedin.com/in/carlos-martinez-09728144
-            </a>
-        </p>
-
-    </section>
-
-</main>
-```
-
-</body>
-</html>
-
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    color: white;
+    margin-top: 40px;
+}
