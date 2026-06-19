@@ -185,3 +185,21 @@ footer {
         padding: 7px 12px;
     }
 }
+header h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #60a5fa;
+}
+
+html {
+    scroll-behavior: smooth;
+}
