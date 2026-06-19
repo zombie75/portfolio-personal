@@ -1,69 +1,119 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f7fa;
-    color: #333;
-    margin: 0;
-}
+<!DOCTYPE html>
+<html lang="es">
 
-header {
-    background: linear-gradient(135deg, #2563eb, #1e40af);
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre | Portfolio</title>
 
-main {
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
-}
+    <link rel="stylesheet" href="style.css">
 
-.card {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
 
-.card:hover {
-    transform: translateY(-5px);
-}
+<body>
 
-.btn,
-.card a {
-    display: inline-block;
-    background: #2563eb;
-    color: white;
-    padding: 10px 16px;
-    border-radius: 8px;
-    text-decoration: none;
-}
+    <header>
+        <h1>Hola, soy Tu Nombre</h1>
+        <p>Desarrollador Full Stack | Java | Spring Boot | React</p>
 
-.btn:hover,
-.card a:hover {
-    background: #1e40af;
-}
+        <a href="#proyectos" class="btn">
+            Ver Proyectos
+        </a>
+    </header>
 
-.skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    list-style: none;
-    padding: 0;
-}
+    <main>
 
-.skills li {
-    background: #e5e7eb;
-    padding: 8px 12px;
-    border-radius: 999px;
-}
+        <section class="card">
+            <h2>👨‍💻 Sobre mí</h2>
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #111827;
-    color: white;
-    margin-top: 40px;
-}
+            <p>
+                Soy desarrollador de software enfocado en crear aplicaciones
+                modernas, escalables y con una excelente experiencia de usuario.
+            </p>
+        </section>
+
+        <section class="card">
+            <h2>🚀 Tecnologías</h2>
+
+            <ul class="skills">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>MySQL</li>
+                <li>Git</li>
+                <li>Docker</li>
+            </ul>
+        </section>
+
+        <section id="proyectos">
+
+            <h2 style="text-align:center; margin-bottom:30px;">
+                🚀 Proyectos Destacados
+            </h2>
+
+            <div class="card">
+                <h3>Sistema de Gestión</h3>
+
+                <p>
+                    Aplicación web desarrollada con Spring Boot y MySQL
+                    para administrar clientes, productos y ventas.
+                </p>
+
+                <a href="#">Ver Proyecto</a>
+            </div>
+
+            <div class="card">
+                <h3>E-Commerce</h3>
+
+                <p>
+                    Plataforma de comercio electrónico desarrollada con
+                    React y API REST.
+                </p>
+
+                <a href="#">Ver Proyecto</a>
+            </div>
+
+            <div class="card">
+                <h3>Portfolio Personal</h3>
+
+                <p>
+                    Sitio web responsive diseñado para mostrar proyectos,
+                    habilidades y experiencia profesional.
+                </p>
+
+                <a href="#">GitHub</a>
+            </div>
+
+        </section>
+
+        <section class="card">
+            <h2>📬 Contacto</h2>
+
+            <p>Email: tucorreo@email.com</p>
+
+            <p>LinkedIn:
+                <a href="#" target="_blank">
+                    linkedin.com/in/tuperfil
+                </a>
+            </p>
+
+            <p>GitHub:
+                <a href="#" target="_blank">
+                    github.com/tuusuario
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Tu Nombre - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+
+</html>
